@@ -1,0 +1,43 @@
+h1{
+    color:black;
+    margin-right: 80px;
+    
+
+}
+button{
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color:rgb(29, 24, 24);
+    color:white;
+    height: 3vh;
+   
+}
+input{
+    border-radius: 15px;
+    
+    
+}
+p{
+    width: 350px;
+    color: white;
+    
+    
+}
+.container{
+    background-color:rgb(139, 131, 131);
+    
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.co-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+.main{
+    margin-botton: 100%;
+}
