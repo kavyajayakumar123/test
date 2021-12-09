@@ -1,30 +1,34 @@
-import "./hsai.css"
-import Heading from "./heading"
-function App() {
-  return (
-    <div class="main">
+import "./router.css";
+import Home from "./home";
+import About from "./about"
+import Contact from "./contact";
+import Login from "./login";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+const App = () => {
+    return (
+      <>
+      <Router>
+          <Switch>
+              <Route  exact path="/">
+                  <Home/>
+              </Route>
 
+              <Route  exact path="/About">
+                  <About/>
+              </Route>
 
-      <div class="container">
-        <Heading/>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
-          Cuvm in eum iquid, ullam facere asperiores temporibus seq
-          ue quod tenetur iusto ut?</p>
-        <br />
-        <br />
+              <Route exact path="/Contact">
+                  <Contact/>
+              </Route>
 
+               
 
-        <div class="co-container">
-
-
-          <input type="text" />
-          <button>GET UPDATES</button>
-          <div />
-
-        </div>
-      </div>
-    </div> 
+              <Route exact path="/Login">
+                  <Login/>
+              </Route>
+          </Switch>
+      </Router>
+      </>  
       );
 }
-
-      export default App;
+export default App;
